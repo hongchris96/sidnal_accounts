@@ -14,7 +14,7 @@ class Api::AccountsController < ApplicationController
     if @account.save
       render :show
     else
-      render json: @account.errors.full_messages, status: 401
+      render json: @account.errors.full_messages, status: 422
     end
   end
 

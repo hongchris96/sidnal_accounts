@@ -14,7 +14,7 @@ class Api::TagsController < ApplicationController
     if @tag.save
       render :show
     else
-      render json: @tag.errors.full_messages, status: 401
+      render json: @tag.errors.full_messages, status: 422
     end
   end
 
