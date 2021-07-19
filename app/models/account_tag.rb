@@ -1,0 +1,2 @@
+class AccountTag < ApplicationRecord
+end
