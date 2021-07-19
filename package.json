@@ -1,0 +1,23 @@
+{
+  "name": "sidnal_accounts",
+  "private": true,
+  "dependencies": {
+    "webpack": "^5.45.1"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^4.7.2"
+  }
+}
