@@ -7,5 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 
+Account.destroy_all
+
 account_data = File.open("../accounts.jsonl").readlines.map(&:chomp)
-p JSON.parse(account_data[0])
+account_data.each do |acc|
+  information = JSON.parse(acc)
+  Account.create(information)
+end
