@@ -1,0 +1,1 @@
+json.extract! account, :acc_id, :balance, :credit, :picture, :name_first, :name_last, :employer, :email, :phone, :address, :comments, :created
