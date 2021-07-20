@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-// import EachAccount from './single_account';
+import DashboardAccount from './dashboard_acc';
 
 class Dashboard extends React.Component {
   constructor(props){
@@ -22,8 +22,13 @@ class Dashboard extends React.Component {
         <h1>Account Cards</h1>
         <p><Link to="/analytics">Analytics</Link></p>
         <ul>
-          {/* {this.props.accounts.map(acc => {})} */}
-          <li>Testing: {this.props.accounts[0].name_first + " " + this.props.accounts[0].name_last}</li>
+          {this.props.accounts.map(acc => {
+            return (<DashboardAccount
+              key={acc.acc_id}
+              account={acc}
+            />)
+          })}
+          {/* <li>Testing: {this.props.accounts[0].name_first + " " + this.props.accounts[0].name_last}</li> */}
         </ul>
       </div>
     );
