@@ -8,6 +8,9 @@ import Page404 from './four_o_four';
 const App = () => {
   return(
     <div>
+      <nav>
+        <p>This is the nav bar</p>
+      </nav>
       <Switch>
         <Route exact path="/" component={DashboardContainer} />
         <Route path="/analytics" component={AnalyticalContainer} />
