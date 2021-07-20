@@ -18,9 +18,8 @@ class Dashboard extends React.Component {
     }
     console.log(this.props.accounts);
     return (
-      <div>
+      <div className="dashboard">
         <h1>Account Cards</h1>
-        <p><Link to="/analytics">Analytics</Link></p>
         <ul>
           {this.props.accounts.map(acc => {
             return (<DashboardAccount

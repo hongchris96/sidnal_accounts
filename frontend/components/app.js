@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Link} from 'react-router-dom';
 
 import DashboardContainer from './dashboard_container';
 // import AnalyticalContainer from './analytical_container';
@@ -7,9 +7,12 @@ import DashboardContainer from './dashboard_container';
 
 const App = () => {
   return(
-    <div>
-      <nav>
-        <p>This is the nav bar</p>
+    <div className="main-app">
+      <nav className="main-nav">
+        <h1>Full Stack Challenge</h1>
+        <a href="https://hongchris96.com/" target="_blank" rel="noopener noreferrer">Chris Hong</a>
+        <Link to="/">Home</Link>
+        <Link to="/analytics">Analytics</Link>
       </nav>
       <Switch>
         <Route exact path="/" component={DashboardContainer} />
