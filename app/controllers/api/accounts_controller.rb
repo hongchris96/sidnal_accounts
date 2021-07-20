@@ -1,6 +1,6 @@
 class Api::AccountsController < ApplicationController
   def index
-    @accounts = Accounts.all
+    @accounts = Account.all
     render :index
   end
 
