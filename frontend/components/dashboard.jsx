@@ -27,7 +27,6 @@ class Dashboard extends React.Component {
               account={acc}
             />)
           })}
-          {/* <li>Testing: {this.props.accounts[0].name_first + " " + this.props.accounts[0].name_last}</li> */}
         </ul>
       </div>
     );
