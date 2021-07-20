@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'json'
+
+account_data = File.open("../accounts.jsonl").readlines.map(&:chomp)
+p JSON.parse(account_data[0])
