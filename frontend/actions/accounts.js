@@ -5,6 +5,7 @@ export const RECEIVE_ACCOUNT = "RECEIVE_ACCOUNT";
 export const REMOVE_ACCOUNT = "REMOVE_ACCOUNT";
 
 export const RECEIVE_ACCOUNT_ERRORS = "RECEIVE_ACCOUNT_ERRORS";
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 
 // Regular Action
 
@@ -26,6 +27,10 @@ const removeAccount = accountId => ({
 const receiveAccountErrors = errors => ({
   type: RECEIVE_ACCOUNT_ERRORS,
   errors
+});
+
+export const clearErrors = () => ({
+  type: CLEAR_ERRORS
 });
 
 // Thunk Action
