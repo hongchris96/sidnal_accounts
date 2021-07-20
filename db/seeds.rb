@@ -6,11 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
+require 'open-uri'
 
 Account.destroy_all
 
-account_data = File.open("../accounts.jsonl").readlines.map(&:chomp)
-account_data.each do |acc|
-  information = JSON.parse(acc)
-  Account.create(information)
+# account_data = File.open("accounts.jsonl").readlines.map(&:chomp)
+open("db/accounts.jsonl") do |data|
+  data.read.each_line do |acc|
+    information = JSON.parse(acc.chomp)
+    Account.create!(information)
+  end
 end
