@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import EachAccount from './single_account';
+// import EachAccount from './single_account';
 
 class Dashboard extends React.Component {
   constructor(props){
