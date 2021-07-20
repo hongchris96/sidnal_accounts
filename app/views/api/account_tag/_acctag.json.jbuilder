@@ -1,1 +1,1 @@
-json.extract! acctag, :account_id, :tag_id
+# json.extract! acctag, :account_id, :tag_id

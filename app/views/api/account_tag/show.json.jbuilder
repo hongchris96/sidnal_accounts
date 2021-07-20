@@ -1,1 +1,1 @@
-json.partial! 'acctag', acctag: @account_tag
+# json.partial! 'acctag', acctag: @account_tag

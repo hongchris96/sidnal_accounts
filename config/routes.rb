@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   namespace :api, defaults: {format: :json} do
     resources :accounts, only: [:index, :show, :create, :destroy]
-    resources :tags, only: [:index, :show, :create, :destroy]
-    resources :account_tags, only: [:create, :destroy, :index]
+    # resources :tags, only: [:index, :show, :create, :destroy]
+    # resources :account_tags, only: [:create, :destroy, :index]
   end
 end
