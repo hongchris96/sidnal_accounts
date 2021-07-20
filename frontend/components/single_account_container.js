@@ -3,7 +3,7 @@ import { requestAccount } from '../actions/accounts';
 import SingleAccount from './single_account';
 
 const mapSTP = (state, ownProps) => ({
-  account: state.accounts[ownProps.match.params.accountId]
+  account: Object.values(state.accounts)[ownProps.match.params.accountId - 1]
 });
 
 const mapDTP = dispatch => ({

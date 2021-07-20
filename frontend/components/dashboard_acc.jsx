@@ -1,5 +1,5 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class DashboardAccount extends React.Component {
   constructor(props){
@@ -14,7 +14,7 @@ class DashboardAccount extends React.Component {
           <h1>{this.props.account.name_first + " " + this.props.account.name_last}</h1>
           <p>{this.props.account.email}</p>
           <p>{this.props.account.phone}</p>
-          <a href="#">More Info</a>
+          <Link to={`/accounts/${this.props.account.id}`}>More Info</Link>
         </div>
       </li>
     );

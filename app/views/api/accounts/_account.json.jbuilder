@@ -1,1 +1,1 @@
-json.extract! account, :acc_id, :balance, :credit, :picture, :name_first, :name_last, :employer, :email, :phone, :address, :comments, :created, :tags
+json.extract! account, :id, :acc_id, :balance, :credit, :picture, :name_first, :name_last, :employer, :email, :phone, :address, :comments, :created, :tags

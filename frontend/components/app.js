@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Switch, Link} from 'react-router-dom';
 
 import DashboardContainer from './dashboard_container';
+import SingleAccountContainer from './single_account_container';
 // import AnalyticalContainer from './analytical_container';
 // import Page404 from './four_o_four';
 
@@ -16,6 +17,7 @@ const App = () => {
       </nav>
       <Switch>
         <Route exact path="/" component={DashboardContainer} />
+        <Route path="/accounts/:accountId" component={SingleAccountContainer} />
         {/* <Route path="/analytics" component={AnalyticalContainer} />
         <Route component={Page404} /> */}
       </Switch>
