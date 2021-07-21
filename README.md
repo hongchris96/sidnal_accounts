@@ -2,7 +2,7 @@
 
 A full stack project showing all account cards, individual accounts information and some statistics.
 
-[Sidnal Live](https://google.com)
+[Sidnal Live](https://sidnal.herokuapp.com/#/)
 
 ------
 ## Technologies
@@ -13,10 +13,11 @@ A full stack project showing all account cards, individual accounts information 
 * Redux
 * Webpack
 * CSS
+* Heroku
 
 ### Backend
 Using Rails to build schema, models, validations, controllers and views located in the `app` folder.
-accounts.jsonl was parsed seeded in the seeds file in the `db` folder.
+accounts.jsonl was parsed seeded in the seeds file in the `db` folder. Read, Create, Destroy routes were created along with their corresponding methods in the controller `/app/controllers/api/accounts_controller.rb`, however only Read was implemented in the frontend.
 
 ### Frontend
 Using React with Redux to build actions, classical components, reducers, store, api util files and entry files located in the `frontend` folder. Styling was added from `app/assets/stylesheets` folder.
@@ -154,3 +155,4 @@ let poorCredPercent = Math.floor(poorCredCount / this.props.accounts.length * 10
 * Add sorting function for Stats by State in the Analytics page
 * Convert all class components into functional components using React Hooks
 * Graphs and Visual in the Analytics page using D3.js
+* Add Update routes and implement Create, Update, and Destroy in the frontend
