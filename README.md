@@ -28,7 +28,7 @@ Using React with Redux to build actions, classical components, reducers, store, 
 ###
 First page loads all the account cards. Each account cards has a picture, name, email, phone, and link to more details.
 
-![account index page](https://image)
+![account index page](https://github.com/hongchris96/sidnal_accounts/blob/main/app/assets/images/account_index.png)
 
 Render information from GET request in the Dashboard component. Passing down props to child components:
 ```javascript
@@ -72,7 +72,7 @@ export default Dashboard;
 ###
 Shows all the details of the account.
 
-![account show page](https://image)
+![account show page](https://github.com/hongchris96/sidnal_accounts/blob/main/app/assets/images/account_show.png)
 
 Render information from GET request in the SingleAccount Component:
 ```javascript
@@ -123,7 +123,7 @@ export default SingleAccount;
 Shows percentages of users for each range of credits.
 Shows total balance and average credit score for each state.
 
-![analytics page](https://image)
+![analytics page](https://github.com/hongchris96/sidnal_accounts/blob/main/app/assets/images/account_analytics.png)
 
 Calculating percentages in Analytics Page Component:
 ```javascript
