@@ -11,7 +11,7 @@ const App = () => {
     <div className="main-app">
       <nav className="main-nav">
         <h1>Full Stack Challenge</h1>
-        <a href="https://hongchris96.com/" target="_blank" rel="noopener noreferrer">Chris Hong</a>
+        <a href="https://github.com/hongchris96/sidnal_accounts" target="_blank" rel="noopener noreferrer">Chris Hong</a>
         <Link to="/">Home</Link>
         <Link to="/analytics">Analytics</Link>
       </nav>
