@@ -51,7 +51,7 @@ class Analytics extends React.Component {
 
     return (
       <div className="analytics">
-        <h1>Stats by States</h1>
+        <h1 className="analytic-title">Stats by States</h1>
         <ul>
           <li className="stats-titles">
             <p>State</p>

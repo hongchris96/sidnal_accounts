@@ -1,0 +1,40 @@
+.analytics {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  h1.analytic-title {
+    font-size: 36px;
+    color: rgb(19,28,93);
+    margin: 60px;
+  }
+
+  ul {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 1.9fr 1.5fr 1fr;
+  }
+
+  li.stats-titles {
+    font-size: 20px;
+    color: rgb(60, 96, 240);
+    margin-bottom: 40px;
+  }
+
+  li.state-stats {
+    h1 {
+      font-size: 20px;
+    }
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+  }
+
+}
+
