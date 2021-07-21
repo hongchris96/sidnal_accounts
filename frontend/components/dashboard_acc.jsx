@@ -26,7 +26,7 @@ class DashboardAccount extends React.Component {
         <img src={`${this.props.account.picture}`} alt="account-picture"/>
         <div className="account-overview">
           <h1>{this.props.account.name_first + " " + this.props.account.name_last}</h1>
-          <p>{this.props.account.email}</p>
+          <p><a href={`mailto:${this.props.account.email}`} className="email" target="_blank" rel="noopener noreferrer">{this.props.account.email}</a></p>
           <p>{this.props.account.phone}</p>
           <p style={{color: `${shade}`}}>{howCloseToMorg}% towards Mortgage Eligible</p>
           <Link to={`/accounts/${this.props.account.id}`}>More Info</Link>
