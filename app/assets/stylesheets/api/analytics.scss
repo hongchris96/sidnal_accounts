@@ -5,18 +5,57 @@
   align-items: center;
   position: relative;
 
-  h1.analytic-title {
+  h1.analytic-title, h1.cred-title {
     font-size: 36px;
     color: rgb(19,28,93);
     margin: 60px;
   }
 
-  ul {
+  ul.cred-range {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+
+    li > * {
+      margin-bottom: 20px;
+      text-shadow: 0 0 1px rgb(142, 142, 142);
+    }
+
+    li.cred-percent1 {
+      color: rgb(0, 255, 0);
+    }
+    li.cred-percent2 {
+      color: rgb(249, 191, 0);
+    }
+    li.cred-percent3 {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+
+  
+
+  ul.states-list {
     width: 80%;
     margin-bottom: 40px;
   }
 
-  li {
+  ul.states-list > li {
     display: grid;
     grid-template-columns: 1.9fr 1.5fr 1fr;
   }

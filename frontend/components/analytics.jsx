@@ -62,7 +62,7 @@ class Analytics extends React.Component {
     return (
       <div className="analytics">
         <h1 className="cred-title">Percentage of Users by Credit</h1>
-        <ul className="cred-range1">
+        <ul className="cred-range">
           <li className="cred-percent1">
             <h2>Good</h2>
             <p>{goodCredPercent}%</p>
@@ -77,7 +77,7 @@ class Analytics extends React.Component {
           </li>
         </ul>
         <h1 className="analytic-title">Stats by States</h1>
-        <ul>
+        <ul className="states-list">
           <li className="stats-titles">
             <p>State</p>
             <p>Total Assets</p>
