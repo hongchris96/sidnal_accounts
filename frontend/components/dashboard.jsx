@@ -16,7 +16,6 @@ class Dashboard extends React.Component {
     if (!this.props.accounts.length) {
       return null;
     }
-    console.log(this.props.accounts);
     return (
       <div className="dashboard">
         <h1>Account Cards</h1>
