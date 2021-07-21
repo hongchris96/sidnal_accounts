@@ -17,6 +17,6 @@ module SidnalAccounts
     # the framework and any gems in your application.
 
     config.assets.enabled = true
-    config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
+    config.assets.initialize_on_precompile = false
   end
 end
