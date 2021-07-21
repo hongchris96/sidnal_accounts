@@ -42,15 +42,40 @@ class Analytics extends React.Component {
       statesBalances[ele] = 0;
       statesCredits[ele] = [];
     });
+    let goodCredCount = 0;
+    let fairCredCount = 0;
+    let poorCredCount = 0;
     this.props.accounts.forEach(acc => {
       let theAddress = acc.address.split(",");
       let theState = theAddress[theAddress.length - 2].slice(1);
       statesCredits[theState].push(acc.credit);
       statesBalances[theState] += this.balanceConvert(acc.balance);
+      if (acc.credit >= 670) goodCredCount += 1;
+      else if (acc.credit >= 580) fairCredCount += 1;
+      else poorCredCount += 1;
     });
+
+    let goodCredPercent = Math.floor(goodCredCount / this.props.accounts.length * 100);
+    let fairCredPercent = Math.floor(fairCredCount / this.props.accounts.length * 100);
+    let poorCredPercent = Math.floor(poorCredCount / this.props.accounts.length * 100);
 
     return (
       <div className="analytics">
+        <h1 className="cred-title">Percentage of Users by Credit</h1>
+        <ul className="cred-range1">
+          <li className="cred-percent1">
+            <h2>Good</h2>
+            <p>{goodCredPercent}%</p>
+          </li>
+          <li className="cred-percent2">
+            <h2>Fair</h2>
+            <p>{fairCredPercent}%</p>
+          </li>
+          <li className="cred-percent3">
+            <h2>Poor</h2>
+            <p>{poorCredPercent}%</p>
+          </li>
+        </ul>
         <h1 className="analytic-title">Stats by States</h1>
         <ul>
           <li className="stats-titles">
