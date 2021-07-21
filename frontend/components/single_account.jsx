@@ -18,18 +18,20 @@ class SingleAccount extends React.Component {
       <div className="account-show">
         <div className="account-highlight">
           <img src={`${this.props.account.picture}`} alt="account-picture" />
-          <h1>{this.props.account.name_first + " " + this.props.account.name_last}</h1>
-          <p>Balance: ${this.props.balance}</p>
-          <p>Credit: {this.props.account.credit}</p>
+          <div className="account-numbers">
+            <h1>{this.props.account.name_first + " " + this.props.account.name_last}</h1>
+            <p>Balance: ${this.props.account.balance}</p>
+            <p>Credit: {this.props.account.credit}</p>
+          </div>
         </div>
         <div className="account-details">
-          <p>Account ID: {this.props.account.acc_id}</p>
-          <p>Email: {this.props.account.email}</p>
-          <p>Phone Number: {this.props.account.phone}</p>
-          <p>Address: {this.props.account.address}</p>
-          <p>Employer: {this.props.account.employer}</p>
-          <p>Created Date: {this.props.account.created}</p>
-          <p>Comments: {this.props.account.comments}</p>
+          <div><label>Account ID: </label><p>{this.props.account.acc_id}</p></div>
+          <div><label>Email: </label><p>{this.props.account.email}</p></div>
+          <div><label>Phone Number: </label><p>{this.props.account.phone}</p></div>
+          <div><label>Address: </label><p>{this.props.account.address}</p></div>
+          <div><label>Employer: </label><p>{this.props.account.employer}</p></div>
+          <div><label>Created Date: </label><p>{this.props.account.created}</p></div>
+          <div><label>Comments: </label><p>{this.props.account.comments}</p></div>
         </div>
       </div>
     );
